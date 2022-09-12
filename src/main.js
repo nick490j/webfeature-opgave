@@ -7,3 +7,8 @@ animate(".mereanimate",
   { opacity: [ 0.4, 1, 0, 0.8], scale: [0.95, 1, 0.7, 0.9] }, 
   { delay: 5, duration: 4, direction: "alternate", repeat: Infinity }
 )
+
+//Progress bar
+scroll(
+    animate(".progress-bar", { scaleX: [0, 1] })
+  );
