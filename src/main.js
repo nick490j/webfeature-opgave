@@ -8,16 +8,11 @@ animate(".mereanimate",
   { delay: 5, duration: 4, direction: "alternate", repeat: Infinity }
 )
 
-//Progress bar
+//Horizontal scroll
+const items = document.querySelectorAll("#horisontalliste li");
 scroll(
-    animate(".progress-bar", { scaleX: [0, 1] })
-  );
-
-//Snapped scroll buttom
-
-document.querySelectorAll(".snap").forEach((section) => {
-    const header = section.querySelector(".photostyle");
-    scroll(animate(header, { y: [-100, 200] }), {
-      target: header
-    });
-  });
+   animate("#horisontalliste", {
+     transform: ["none", `translateX(-${items.length - 1}00vw)`]
+   }),
+   { target: document.querySelector("#horisontalscrollsection") }
+ ); 
