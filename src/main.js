@@ -16,3 +16,17 @@ scroll(
    }),
    { target: document.querySelector("#horisontalscrollsection") }
  ); 
+
+ //Progress bar
+scroll(
+  animate(".progress-bar", { scaleX: [0, 1] })
+);
+
+//Snapped scroll buttom
+
+document.querySelectorAll(".snap").forEach((section) => {
+  const header = section.querySelector(".photostyle");
+  scroll(animate(header, { y: [-100, 200] }), {
+    target: header
+  });
+});
