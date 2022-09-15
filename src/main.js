@@ -30,12 +30,34 @@ document.querySelectorAll(".snap").forEach((section) => {
     target: header
   });
 
+ 
   animate(
     " li, h1",
     { opacity: [0, 1] },
     { 
-        delay: stagger(1, { start: 1 })
-        
-    }
+        delay: stagger(0.5, { start: 1 })
+    } 
+    
   )
+  inView( ".fotoinview" , () =>{
+    animate( ".fotoinview", { x: [-2000, 0 ] }, { duration:3 })
+  })
+  inView( ".fotoinview1" , () =>{
+    animate( ".fotoinview1", { x: [+2000, 0 ] }, { duration:3 })
+  })
+  
+  scroll(
+    animate(".scrollzoomimg", { 
+      scale: [1, 1.5]    
+    }),
+    { 
+      target: document.querySelector(".scrollzoomimg"),
+      offset: ["0.5 0.5", "0.2 0.2"]
+   }
+  )
+  
+  
 });
+
+
+
