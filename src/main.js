@@ -8,6 +8,11 @@ animate(".mereanimate",
   { delay: 5, duration: 4, direction: "alternate", repeat: Infinity }
 )
 
+ //Progress bar
+ scroll(
+  animate(".progress-bar", { scaleX: [0, 1] })
+);
+
 //Horizontal scroll
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
@@ -17,10 +22,21 @@ scroll(
    { target: document.querySelector("#horisontalscrollsection") }
  ); 
 
- //Progress bar
-scroll(
-  animate(".progress-bar", { scaleX: [0, 1] })
-);
+
+//Parallax
+document.querySelectorAll(".parallaxcontainer1").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes = parallaxcontainer.querySelector("img");
+  scroll(animate(elementderskalparallaxes, { y: [0, 10] }), {
+    target: elementderskalparallaxes
+  });
+});
+
+document.querySelectorAll(".parallaxcontainer4").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes = parallaxcontainer.querySelector("img");
+  scroll(animate(elementderskalparallaxes, { y: [ 100, 600] }), {
+    target: elementderskalparallaxes
+  });
+});
 
 //Snapped scroll buttom
 
