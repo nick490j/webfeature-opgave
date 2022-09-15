@@ -29,4 +29,13 @@ document.querySelectorAll(".snap").forEach((section) => {
   scroll(animate(header, { y: [-100, 200] }), {
     target: header
   });
+
+  animate(
+    " li, h1",
+    { opacity: [0, 1] },
+    { 
+        delay: stagger(1, { start: 1 })
+        
+    }
+  )
 });
