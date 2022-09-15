@@ -38,6 +38,44 @@
         background-color: #2E2D2D;
         
     }
-    .img:
+
+    .scale-up-top {
+        -webkit-animation: scale-up-top 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) alternate both;
+                animation: scale-up-top 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) alternate both;
+    }
+
+
+    /* KEYFRAMES */
+    @-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  @keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.1);
+              transform: scale(0.1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+
+  
+  
 
 }
