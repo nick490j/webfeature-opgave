@@ -30,3 +30,8 @@ document.querySelectorAll(".snap").forEach((section) => {
     target: header
   });
 });
+
+//Rellax scroll
+var rellax = new Rellax('.rellax',{
+  wrapper: '.custom-element'
+});

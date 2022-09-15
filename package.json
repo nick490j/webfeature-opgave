@@ -21,6 +21,7 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
-    "motion": "^10.14.2"
+    "motion": "^10.14.2",
+    "rellax": "^1.12.1"
   }
 }
