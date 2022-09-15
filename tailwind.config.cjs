@@ -8,6 +8,7 @@ module.exports = {
         'hero-2': "url('/img/sh1.jpg')",
         'carosel': "url('/img/lomo-smena-17.jpg')",
         'skew-bg': "url('/img/background-100.jpg')",
+        'mobile-bg': "url('/img/mobile-bg-100.jpg')",
       },
       colors:{
         'quote-red': '#D94436',
